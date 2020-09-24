@@ -57,8 +57,8 @@ app.post('/sendemail',(req,res) =>{
             const transporter=nodemailer.createTransport({
                 service:'gmail',
                 auth:{
-                    user:'darjip559@gmail.com',
-                    pass:'Vasantara7710'
+                    user:'rrrr@gmail.com',
+                    pass:'456'
                 },
                 tls: {
                   
@@ -67,7 +67,7 @@ app.post('/sendemail',(req,res) =>{
             })
 
             const mailOptions={
-                from:'darjip559@gmail.com',
+                from:'rrrr@gmail.com',
                 to:to,
                 subject:subject,
                 text:body,
