@@ -2,7 +2,6 @@ const nodemailer=require('nodemailer')
 const express=require('express')
 const bodyparser=require('body-parser')
 const app=express()
-const dotenv=require('dotenv')
 const multer=require('multer')
 const fs=require('fs')
 
@@ -58,9 +57,13 @@ app.post('/sendemail',(req,res) =>{
             const transporter=nodemailer.createTransport({
                 service:'gmail',
                 auth:{
-                    user:'rrrrr@gmail.com',
-                    pass:'78787878785'
-                }
+                    user:'darjip559@gmail.com',
+                    pass:'Vasantara7710'
+                },
+                tls: {
+                  
+                    rejectUnauthorized: false
+                },
             })
 
             const mailOptions={
